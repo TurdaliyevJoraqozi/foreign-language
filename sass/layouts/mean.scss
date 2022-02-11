@@ -1,0 +1,28 @@
+// ---------skills--------------------
+
+.skills__cards {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+// about ------------------------------
+.about {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+// -{-------------pricing__cards----------------
+.pricing__cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+// ---------------contact----------------------
+.contact {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}

@@ -22,3 +22,84 @@
     margin: 1.6rem 0;
   }
 }
+.title {
+  color: $title-color;
+  font-size: 4.8rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 5rem 0;
+}
+.heading-2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.paragraph {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin: 1.2rem 0;
+}
+.about-title {
+  color: $title-color;
+  font-size: 4.8rem;
+  font-weight: 900;
+  margin: 5rem 0;
+}
+.about__description-statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  .statistics {
+    &-1,
+    &-2,
+    &-3 {
+      text-align: center;
+      h3 {
+        margin-top: 2rem;
+        font-weight: 600;
+        font-size: 48px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        color: #8f95a5;
+      }
+    }
+  }
+}
+.about__img img {
+  width: 100%;
+  display: block;
+}
+.pricing__cards {
+  &-1,
+  &-2,
+  &-3 {
+    .pricing-img {
+      img {
+        width: 31rem;
+        height: 31rem;
+      }
+    }
+    .pricing-h3 {
+      font-weight: 600;
+      font-size: 2.3rem;
+    }
+  }
+}
+.pricing-cost {
+  font-size: 3rem;
+  background-color: $card-backgroun;
+  text-align: center;
+  width: 70%;
+
+  span {
+    font-size: 1.8rem;
+  }
+}
+.contact-img {
+  img {
+    width: 40rem;
+    height: 42rem;
+  }
+}

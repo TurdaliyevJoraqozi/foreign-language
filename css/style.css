@@ -23,6 +23,81 @@
   margin: 1.6rem 0;
 }
 
+.title {
+  color: #032121;
+  font-size: 4.8rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.heading-2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.paragraph {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin: 1.2rem 0;
+}
+
+.about-title {
+  color: #032121;
+  font-size: 4.8rem;
+  font-weight: 900;
+  margin: 5rem 0;
+}
+
+.about__description-statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.about__description-statistics .statistics-1, .about__description-statistics .statistics-2, .about__description-statistics .statistics-3 {
+  text-align: center;
+}
+.about__description-statistics .statistics-1 h3, .about__description-statistics .statistics-2 h3, .about__description-statistics .statistics-3 h3 {
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 48px;
+}
+.about__description-statistics .statistics-1 p, .about__description-statistics .statistics-2 p, .about__description-statistics .statistics-3 p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #8f95a5;
+}
+
+.about__img img {
+  width: 100%;
+  display: block;
+}
+
+.pricing__cards-1 .pricing-img img, .pricing__cards-2 .pricing-img img, .pricing__cards-3 .pricing-img img {
+  width: 31rem;
+  height: 31rem;
+}
+.pricing__cards-1 .pricing-h3, .pricing__cards-2 .pricing-h3, .pricing__cards-3 .pricing-h3 {
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+
+.pricing-cost {
+  font-size: 3rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  width: 70%;
+}
+.pricing-cost span {
+  font-size: 1.8rem;
+}
+
+.contact-img img {
+  width: 40rem;
+  height: 42rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -66,6 +141,70 @@ li {
   background-color: #fff;
   color: #263238;
   transform: translateX(4rem);
+}
+
+.btn {
+  background-color: #263238;
+  width: 15rem;
+  padding: 1.2rem;
+  text-align: center;
+  border: 1px solid #263238;
+  transition: all 0.6s ease-in-out;
+}
+.btn a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.btn:hover {
+  background-color: #fff;
+}
+.btn:hover a {
+  color: #263238;
+}
+
+.skills__card-1 {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.skills__card-1-img img {
+  width: 29rem;
+}
+
+.skills__card-2-head {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.skills__card-2-1, .skills__card-2-2 {
+  border-radius: 1rem;
+  background-color: #f5f5f5;
+  padding: 2rem;
+}
+.skills__card-2-1-img img, .skills__card-2-2-img img {
+  width: 29rem;
+}
+.skills__card-2-body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  background-color: #f5f5f5;
+  margin-top: 1.2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.inputs {
+  display: flex;
+  margin-top: 2.2rem;
+}
+.inputs input {
+  margin-right: 1.2rem;
+  width: 60%;
+  padding: 1rem;
+  outline: none;
 }
 
 header {
@@ -114,6 +253,56 @@ nav .nav__talk {
 nav .nav__talk:hover {
   background-color: #333;
   color: #fff;
+}
+
+.skills__cards {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.about {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+.pricing__cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.contact {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.footer_description {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_description .foooter-list ul {
+  display: flex;
+}
+.footer_description .foooter-list ul li {
+  font-size: 2rem;
+  margin-left: 1.2rem;
+  cursor: pointer;
+}
+.footer_description .foooter-list ul li:hover {
+  color: coral;
+}
+
+.draw {
+  width: 100%;
+  background-color: #f5f5f5;
+  height: 0.4rem;
+  margin: 2rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

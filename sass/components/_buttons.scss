@@ -16,3 +16,22 @@
     }
   }
 }
+.btn {
+  background-color: #263238;
+  width: 15rem;
+  padding: 1.2rem;
+  text-align: center;
+  border: 1px solid #263238;
+  transition: all 0.6s ease-in-out;
+  a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  &:hover {
+    a {
+      color: #263238;
+    }
+    background-color: #fff;
+  }
+}

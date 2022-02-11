@@ -1,0 +1,24 @@
+.footer_description {
+  display: flex;
+  justify-content: space-between;
+
+  .foooter-list {
+    ul {
+      display: flex;
+      li {
+        font-size: 2rem;
+        margin-left: 1.2rem;
+        cursor: pointer;
+        &:hover {
+          color: $animation-color;
+        }
+      }
+    }
+  }
+}
+.draw {
+  width: 100%;
+  background-color: $card-backgroun;
+  height: 0.4rem;
+  margin: 2rem 0;
+}
