@@ -554,14 +554,6 @@ nav .nav__talk:hover {
     margin: 0 auto;
   }
 
-  .header__description {
-    text-align: center;
-  }
-  .header__description a {
-    display: block;
-    margin: 0 auto;
-  }
-
   .skills__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -598,6 +590,11 @@ nav .nav__talk:hover {
 
   .skills__card-2-body-description {
     order: 2;
+  }
+
+  .skills__card-2-body-img img {
+    width: 19rem;
+    height: 19rem;
   }
 
   .skills__cards > div {
@@ -667,6 +664,11 @@ nav .nav__talk:hover {
   .footer_description .foooter-list ul li {
     font-size: 1.2rem;
   }
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 320px) {
   .header__img img {
@@ -677,6 +679,7 @@ nav .nav__talk:hover {
   .header__description h1 {
     font-size: 2rem;
     margin-top: 1rem;
+    max-width: fit-content;
   }
   .header__description p {
     font-size: 1.4rem;
