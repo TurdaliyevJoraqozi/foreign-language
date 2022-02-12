@@ -172,11 +172,6 @@ li {
   width: 29rem;
 }
 
-.skills__card-2-head {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
 .skills__card-2-1, .skills__card-2-2 {
   border-radius: 1rem;
   background-color: #f5f5f5;
@@ -184,6 +179,7 @@ li {
 }
 .skills__card-2-1-img img, .skills__card-2-2-img img {
   width: 29rem;
+  height: 25rem;
 }
 .skills__card-2-body {
   width: 100%;
@@ -191,7 +187,6 @@ li {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   background-color: #f5f5f5;
-  margin-top: 1.2rem;
   padding: 2rem;
   border-radius: 1rem;
 }
@@ -257,8 +252,29 @@ nav .nav__talk:hover {
 
 .skills__cards {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   gap: 2rem;
+}
+
+.skills__card-1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.skills__card-2-1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.skills__card-2-2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.skills__card-2-body {
+  grid-column: 2/4;
+  grid-row: 2/3;
 }
 
 .about {
@@ -303,6 +319,443 @@ nav .nav__talk:hover {
   background-color: #f5f5f5;
   height: 0.4rem;
   margin: 2rem 0;
+}
+
+@media (max-width: 992px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+
+  nav .nav__list ul {
+    padding: 0;
+  }
+  nav .nav__list ul li a {
+    font-size: 1.6rem;
+    padding-top: 0;
+  }
+
+  nav .nav__talk {
+    font-size: 1.6rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .header__description h1 {
+    font-size: 4.8rem;
+  }
+
+  .header__img img {
+    width: 46rem;
+    height: 46rem;
+  }
+
+  .header__description a {
+    font-size: 2.4rem;
+  }
+
+  .title {
+    font-size: 3.6rem;
+    margin: 2.5rem 0;
+  }
+
+  .skills__card-1-img img,
+.skills__card-2-1-img img,
+.skills__card-2-2-img img {
+    width: 24rem;
+    height: 26rem;
+  }
+
+  .paragraph {
+    font-size: 1.4rem;
+  }
+
+  .heading-2 {
+    font-size: 2.2rem;
+  }
+
+  .btn a {
+    font-size: 1.6rem;
+    padding: 0.2rem;
+  }
+
+  .skills__card-2-body-img img {
+    width: 25rem;
+    height: 16rem;
+  }
+
+  .about-title {
+    font-size: 3.6rem;
+  }
+
+  .about__img img {
+    width: 33rem;
+    height: 33rem;
+  }
+
+  .about__description-statistics .statistics-1 h3,
+.about__description-statistics .statistics-2 h3,
+.about__description-statistics .statistics-3 h3 {
+    font-size: 3rem;
+  }
+
+  .about__description-statistics .statistics-1 p,
+.about__description-statistics .statistics-2 p,
+.about__description-statistics .statistics-3 p {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+
+  .pricing__cards-1 .pricing-img img,
+.pricing__cards-2 .pricing-img img,
+.pricing__cards-3 .pricing-img img {
+    width: 26rem;
+    height: 26rem;
+  }
+
+  .pricing-cost {
+    font-size: 2.4rem;
+  }
+
+  .contact-img img {
+    width: 31rem;
+    height: 28rem;
+  }
+
+  .about-title {
+    margin: 1rem 0;
+  }
+
+  .inputs input {
+    padding: 0.6rem;
+  }
+
+  .footer_description .foooter-list ul li {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 767px) {
+  .nav__list,
+.nav__talk {
+    display: none;
+  }
+
+  .header__description h1 {
+    font-size: 3.6rem;
+  }
+
+  .header__img img {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .header__description a {
+    font-size: 1.8rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin: 2.5rem 0;
+  }
+
+  .skills__card-1-img img,
+.skills__card-2-1-img img,
+.skills__card-2-2-img img {
+    width: 19rem;
+    height: 19rem;
+  }
+
+  .paragraph {
+    font-size: 1.3rem;
+  }
+
+  .heading-2 {
+    font-size: 2rem;
+  }
+
+  .btn a {
+    font-size: 1.4rem;
+    padding: 0rem;
+  }
+
+  .skills__card-2-body-img img {
+    width: 20rem;
+    height: 13rem;
+  }
+
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about__img img {
+    width: 29rem;
+    height: 29rem;
+  }
+
+  .about__description-statistics .statistics-1 h3,
+.about__description-statistics .statistics-2 h3,
+.about__description-statistics .statistics-3 h3 {
+    font-size: 2.2rem;
+  }
+
+  .about__description-statistics .statistics-1 p,
+.about__description-statistics .statistics-2 p,
+.about__description-statistics .statistics-3 p {
+    font-size: 1.3rem;
+    line-height: 1.1rem;
+  }
+
+  .pricing__cards-1 .pricing-img img,
+.pricing__cards-2 .pricing-img img,
+.pricing__cards-3 .pricing-img img {
+    width: 19rem;
+    height: 19rem;
+  }
+
+  .pricing__cards-1 .pricing-h3,
+.pricing__cards-2 .pricing-h3,
+.pricing__cards-3 .pricing-h3 {
+    font-size: 2rem;
+  }
+
+  .pricing-cost {
+    font-size: 2rem;
+  }
+
+  .pricing-cost span {
+    font-size: 1.3rem;
+  }
+
+  .contact-img img {
+    width: 23rem;
+    height: 21rem;
+  }
+
+  .about-title {
+    margin: 1rem 0;
+  }
+
+  .inputs input {
+    padding: 0.6rem;
+  }
+
+  .footer_description .foooter-list ul li {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 575px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .header__img img {
+    width: 43rem;
+    height: 43em;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .header__description {
+    text-align: center;
+  }
+  .header__description a {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .skills__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .skills__card-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .skills__card-2-1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .skills__card-2-2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .skills__card-2-body {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .skills__card-2-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .skills__card-2-body-img {
+    order: 1;
+  }
+
+  .skills__card-2-body-description {
+    order: 2;
+  }
+
+  .skills__cards > div {
+    text-align: center;
+    position: relative;
+  }
+
+  .skills__card-2-1 .btn, .skills__card-2-2 .btn, .skills__card-2-body .btn {
+    position: absolute;
+    bottom: 2rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about__img img {
+    width: 35rem;
+    height: 35rem;
+    margin: 0 auto;
+  }
+
+  .about-title {
+    text-align: center;
+  }
+
+  .pricing__cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pricing__cards-1 .pricing-img img,
+.pricing__cards-2 .pricing-img img,
+.pricing__cards-3 .pricing-img img {
+    width: 31rem;
+    height: 26rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .pricing-cost {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .contact-title {
+    position: absolute;
+    top: -5rem;
+    left: 16rem;
+  }
+
+  .contact-img img {
+    width: 35rem;
+    height: 32rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer_description .foooter-list ul li {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 320px) {
+  .header__img img {
+    width: 29rem;
+    height: 29rem;
+  }
+
+  .header__description h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .header__description p {
+    font-size: 1.4rem;
+  }
+  .header__description a {
+    width: 100%;
+  }
+
+  .skills__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .skills__card-2-1 .btn,
+.skills__card-2-2 .btn,
+.skills__card-2-body .btn {
+    position: relative;
+    margin-top: 5rem;
+  }
+
+  .about__img img {
+    width: 28rem;
+    height: 28rem;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+
+  .about__description-statistics {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing__cards-1 .pricing-img img,
+.pricing__cards-2 .pricing-img img,
+.pricing__cards-3 .pricing-img img {
+    width: 24rem;
+    height: 24rem;
+  }
+
+  .contact-img img {
+    width: 25rem;
+    height: 22rem;
+  }
+
+  .contact-title {
+    left: 7rem;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputs input {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .inputs .btn {
+    width: 100%;
+  }
+
+  .footer_description {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_description .logo {
+    text-align: center;
+  }
+  .footer_description .foooter-list ul li {
+    font-size: 1rem;
+    margin-left: 0.8rem;
+    margin-top: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
