@@ -1,0 +1,36 @@
+// skills__card-1
+.skills__card-1 {
+  background-color: $card-backgroun;
+  padding: 2rem;
+  border-radius: 1rem;
+  &-img {
+    img {
+      width: 29rem;
+    }
+  }
+}
+// skills__card-2
+.skills__card-2 {
+  &-1,
+  &-2 {
+    border-radius: 1rem;
+    background-color: $card-backgroun;
+    padding: 2rem;
+    &-img {
+      img {
+        width: 29rem;
+        height: 25rem;
+      }
+    }
+  }
+  &-body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    background-color: $card-backgroun;
+
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+}
